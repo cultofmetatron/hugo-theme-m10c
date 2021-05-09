@@ -30,6 +30,7 @@
         {{- end }}
       </nav>
       {{- end }}
+
       <p>{{ .Site.Params.description | default "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium." }}</p>
       {{- with .Site.Params.social }}
       <div class="app-header-social">
@@ -40,6 +41,10 @@
         {{ end }}
       </div>
       {{- end }}
+
+      </p>
+        <a href="https://www.codementor.io/@cultofmetatron?refer=badge"><img src="https://www.codementor.io/m-badges/cultofmetatron/find-me-on-cm-g.svg" alt="Codementor badge"></a>
+      </p>
     </header>
     <main class="app-container">
       {{ block "main" . }}
